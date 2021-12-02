@@ -1,7 +1,7 @@
-import create_grid
+from source.create_grid import find_empty
 
 def solve(grid):
-    find = create_grid.find_empty(grid)
+    find = find_empty(grid)
     if not find:
         return True
     else:
@@ -40,10 +40,3 @@ def valid(grid, num, pos):
                 return False
 
     return True
-
-
-# print("Original:")
-# create_grid.print_grid(create_grid.grid_2)
-# solve(create_grid.grid_2)
-# print("\nSolved:")
-# create_grid.print_grid(create_grid.grid_2)
